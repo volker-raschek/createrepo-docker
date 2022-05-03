@@ -27,8 +27,7 @@
         "^createrepo.sh$"
       ],
       "matchStrings": [
-        "^CREATEREPO_IMAGE_NAME=(?<depName>.*)$",
-        "^CREATEREPO_IMAGE_VERSION=(?<currentValue>.*)$"
+        "^CREATEREPO_IMAGE_FULLY_QUALIFIED=(?<depName>.*):(?<currentValue>.*)$"
       ],
       "datasourceTemplate": "docker"
     }
