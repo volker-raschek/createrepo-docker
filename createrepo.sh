@@ -4,7 +4,7 @@ set -e
 
 CONTAINER_RUNTIME=$(which docker)
 
-CREATEREPO_IMAGE_FULLY_QUALIFIED=docker.io/volkerraschek/createrepo:0.17.1
+CREATEREPO_IMAGE_FULLY_QUALIFIED=docker.io/volkerraschek/createrepo:0.17.2
 
 CUSTOM_UID=$(getent passwd ${USER} | cut -d ':' -f 3)
 CUSTOM_GID=$(getent passwd ${USER} | cut -d ':' -f 4)

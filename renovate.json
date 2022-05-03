@@ -10,12 +10,6 @@
       "automerge": true,
       "matchManagers": "droneci",
       "matchUpdateTypes": [ "minor", "patch"]
-    },
-    {
-      "addLabels": [ "renovate/createrepo", "renovate/automerge" ],
-      "automerge": false,
-      "matchPackageNames": [ "createrepo" ],
-      "matchManagers": [ "regex" ]
     }
   ],
   "rebaseLabel": "renovate/rebase",
