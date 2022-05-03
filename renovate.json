@@ -22,13 +22,15 @@
   "rebaseWhen": "behind-base-branch",
   "regexManagers": [
     {
-      "description": "Update version",
+      "description": "Update container image of createrepo.sh",
       "fileMatch": [
-        "^Makefile$"
+        "^createrepo.sh$"
       ],
       "matchStrings": [
-        "CREATE_REPO_VERSION\\?=(?<currentValue>.*) # renovate: datasource=(?<datasource>.*) depName=(?<depName>.*)( lookupName=(?<lookupName>.*))?( versioning=(?<versioning>.*))?"
-      ]
+        "^CREATEREPO_IMAGE_NAME=(?<depName>.*)$",
+        "^CREATEREPO_IMAGE_VERSION=(?<currentValue>.*)$"
+      ],
+      "datasourceTemplate": "docker"
     }
   ]
 }

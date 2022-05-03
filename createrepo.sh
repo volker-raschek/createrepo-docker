@@ -3,7 +3,11 @@
 set -e
 
 CONTAINER_RUNTIME=$(which docker)
-CREATEREPO_IMAGE_VERSION=0.17.2
+
+CREATEREPO_IMAGE_REGISTRY_HOST=docker.io
+CREATEREPO_IMAGE_NAME=volkerraschek/createrepo
+CREATEREPO_IMAGE_VERSION=0.17.1
+CREATEREPO_IMAGE_FULLY_QUALIFIED=${CREATEREPO_IMAGE_REGISTRY_HOST}/${CREATEREPO_IMAGE_NAME}:${CREATEREPO_IMAGE_VERSION}
 
 CUSTOM_UID=$(getent passwd ${USER} | cut -d ':' -f 3)
 CUSTOM_GID=$(getent passwd ${USER} | cut -d ':' -f 4)
@@ -16,4 +20,4 @@ ${CONTAINER_RUNTIME} run \
   --volume ${REPO_DIR}:${REPO_DIR} \
   --workdir ${REPO_DIR} \
   --user ${CUSTOM_UID}:${CUSTOM_GID} \
-  docker.io/volkerraschek/createrepo:${CREATEREPO_IMAGE_VERSION} ${@}
+  ${CREATEREPO_IMAGE_FULLY_QUALIFIED} ${@}
