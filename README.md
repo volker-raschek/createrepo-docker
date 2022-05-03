@@ -6,4 +6,4 @@
 This project contains all sources to build the container image
 `docker.io/volkerraschek/createrepo`. The primary goal of this project is to package
 the binary `createrepo` as container image to provide the functionally for CI/CD
-workflows or for systems which does not provide or based on RHEL.
+workflows or for systems which does contains the binary.
