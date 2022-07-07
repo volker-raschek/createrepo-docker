@@ -1,4 +1,4 @@
-FROM docker.io/library/rockylinux:8.5
+FROM docker.io/library/rockylinux:8.6
 
 ARG CREATEREPO_VERSION
 
