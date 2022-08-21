@@ -370,7 +370,7 @@ steps:
     password:
       from_secret: container_image_registry_password
     build_args:
-    - CEATEREPO_VERSION=${DRONE_TAG}
+    - CREATEREPO_VERSION=${DRONE_TAG}
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
@@ -429,7 +429,7 @@ steps:
     password:
       from_secret: container_image_registry_password
     build_args:
-    - CEATEREPO_VERSION=${DRONE_TAG}
+    - CREATEREPO_VERSION=${DRONE_TAG}
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
