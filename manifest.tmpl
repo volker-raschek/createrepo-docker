@@ -1,4 +1,4 @@
-image: volkerraschek/createrepo:{{#if build.tag}}{{trimPrefix "v" build.tag}}{{else}}latest{{/if}}
+image: git.cryptic.systems/volker.raschek/createrepo:{{#if build.tag}}{{trimPrefix "v" build.tag}}{{else}}latest{{/if}}
 {{#if build.tags}}
 tags:
 {{#each build.tags}}
@@ -7,13 +7,11 @@ tags:
   - "latest"
 {{/if}}
 manifests:
-  -
-    image: volkerraschek/createrepo:{{#if build.tag}}{{trimPrefix "v" build.tag}}{{else}}latest{{/if}}-amd64
+  - image: git.cryptic.systems/volker.raschek/createrepo:{{#if build.tag}}{{trimPrefix "v" build.tag}}{{else}}latest{{/if}}-amd64
     platform:
       architecture: amd64
       os: linux
-  -
-    image: volkerraschek/createrepo:{{#if build.tag}}{{trimPrefix "v" build.tag}}{{else}}latest{{/if}}-arm64-v8
+  - image: git.cryptic.systems/volker.raschek/createrepo:{{#if build.tag}}{{trimPrefix "v" build.tag}}{{else}}latest{{/if}}-arm64-v8
     platform:
       architecture: arm64
       os: linux
