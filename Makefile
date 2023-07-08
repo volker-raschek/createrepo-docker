@@ -1,6 +1,6 @@
 # CREATEREPO_VERSION
 # Only required to install a specifiy version
-CREATEREPO_VERSION?=0.17.7
+CREATEREPO_VERSION?=0.20.1
 
 # CONTAINER_RUNTIME
 # The CONTAINER_RUNTIME variable will be used to specified the path to a
