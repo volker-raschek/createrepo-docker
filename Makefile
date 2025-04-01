@@ -9,8 +9,8 @@ CONTAINER_RUNTIME?=$(shell which podman)
 
 # CREATEREPO_IMAGE_REGISTRY_NAME
 # Defines the name of the new container to be built using several variables.
-CREATEREPO_IMAGE_REGISTRY_NAME:=docker.io
-CREATEREPO_IMAGE_REGISTRY_USER:=volkerraschek
+CREATEREPO_IMAGE_REGISTRY_NAME?=git.cryptic.systems
+CREATEREPO_IMAGE_REGISTRY_USER?=volker.raschek
 
 CREATEREPO_IMAGE_NAMESPACE?=${CREATEREPO_IMAGE_REGISTRY_USER}
 CREATEREPO_IMAGE_NAME:=createrepo
