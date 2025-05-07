@@ -1,5 +1,5 @@
 # CREATEREPO_VERSION
-# Only required to install a specifiy version
+# Only required to install a specify version
 CREATEREPO_VERSION?=0.20.1
 
 # CONTAINER_RUNTIME
