@@ -2,19 +2,17 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/volkerraschek/createrepo)](https://hub.docker.com/r/volkerraschek/createrepo)
 
-This project contains all sources to build the container image
-`docker.io/volkerraschek/createrepo` and the shell script `createrepo.sh`.
+This project contains all sources to build the container image `git.cryptic.systems/volker.raschek/createrepo` and the
+shell script `createrepo.sh`.
 
-The primary goal of this project is to package the binary `createrepo` as
-container image to provide the functionally for CI/CD workflows or for systems
-which does contains the binary.
+The primary goal of this project is to package the binary `createrepo` as container image to provide the functionally
+for CI/CD workflows or for systems which does contains the binary.
 
 ## createrepo.sh
 
-The shell script `createrepo.sh` is a wrapper for the binary `createrepo`, which
-is not available depending on the distribution. It starts the container image
-`docker.io/volkerraschek/createrepo` in the background to call the binary. For
-this reason, a container runtime like `docker` or `podman` is necessary.
+The shell script `createrepo.sh` is a wrapper for the binary `createrepo`, which is not available depending on the
+distribution. It starts the container image `git.cryptic.systems/volker.raschek/createrepo` in the background to call
+the binary. For this reason, a container runtime like `docker` or `podman` is necessary.
 
 ### Installation
 
@@ -26,8 +24,8 @@ curl https://git.cryptic.systems/volker.raschek/createrepo-docker/raw/branch/mas
 
 ### Usage
 
-The script forwards all arguments directly to the binary running inside the
-container. For this reason, all arguments from the original binary can be used.
+The script forwards all arguments directly to the binary running inside the container. For this reason, all arguments
+from the original binary can be used.
 
 ```bash
 createrepo.sh --update .                  # Update local repository

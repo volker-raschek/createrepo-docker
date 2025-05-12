@@ -4,7 +4,7 @@ set -e
 
 CONTAINER_RUNTIME=$(which docker)
 
-CREATEREPO_IMAGE_FULLY_QUALIFIED="docker.io/volkerraschek/createrepo:0.17.2" # renovate: datasource=docker registryUrl=https://docker.io depName=volkerraschek/createrepo
+CREATEREPO_IMAGE_FULLY_QUALIFIED="git.cryptic.systems/volker.raschek/createrepo:0.17.2" # renovate: datasource=docker registryUrl=https://docker.io depName=volkerraschek/createrepo
 
 CUSTOM_UID="${CUSTOM_UID:-"$(getent passwd "${USER}" | cut -d ':' -f 3)"}"
 CUSTOM_GID="${CUSTOM_GID:-"$(getent passwd "${USER}" | cut -d ':' -f 4)"}"
