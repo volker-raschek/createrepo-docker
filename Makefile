@@ -27,7 +27,6 @@ container-image/build:
 		--no-cache \
 		--pull \
 		--tag ${CREATEREPO_IMAGE_FULLY_QUALIFIED} \
-		--tag \
 		.
 
 # DELETE CONTAINER IMAGE
